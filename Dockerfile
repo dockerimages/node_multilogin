@@ -1,4 +1,4 @@
-FROM dockerfiles/nave
+FROM dockerimages/nave
 MAINTAINER Direkt SPEED
 ADD easy_node_authentication /app
 #process.env[v]
