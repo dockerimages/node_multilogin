@@ -1,0 +1,29 @@
+{
+  "name": "auth2",
+  "version": "0.0.0",
+  "description": "Code for the entire scotch.io tutorial series: Complete Guide to Node Authentication",
+  "main": "server.js",
+  "dependencies": {
+    "bcrypt-nodejs": "~0.0.3",
+    "body-parser": "~1.0.2",
+    "connect-flash": "~0.1.1",
+    "cookie-parser": "~1.0.1",
+    "ejs": "~0.8.8",
+    "express": "~4.0.0",
+    "express-session": "~1.0.2",
+    "mongoose": "~3.8.8",
+    "passport-facebook": "~1.0.3",
+    "passport": "~0.1.18",
+    "passport-twitter": "~1.0.2",
+    "morgan": "~1.0.0",
+    "passport-google-oauth": "~0.1.5",
+    "passport-local": "~0.1.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Frank Lemanschik @ Direkt SPEED <frank@dspeed.eu> (http://dspeed.eu/)",
+  "license": "ISC"
+}
