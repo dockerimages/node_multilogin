@@ -9,7 +9,8 @@ var mongoose = require('mongoose');
 var passport = require('passport');
 var flash    = require('connect-flash');
 
-var configDB = require('./config/database.js');
+var configDBread = require('./config/database.js');
+var configDBwrite = require('./config/database-write.js');
 
 // Seperated Middleware
 var logger	 = require('morgan');
@@ -21,7 +22,8 @@ var bodyParser = require('body-parser');
 
 
 // configuration ===============================================================
-mongoose.connect(configDB.url); // connect to our database
+mongooseread.connect(configDBread.url); // connect to our database
+mongoosewrite.connect(configDBwrite.url); // connect to our database
 
 require('./config/passport')(passport); // pass passport for configuration
 
