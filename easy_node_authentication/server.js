@@ -22,8 +22,8 @@ var bodyParser = require('body-parser');
 
 
 // configuration ===============================================================
-mongooseread.connect(configDBread.url); // connect to our database
-mongoosewrite.connect(configDBwrite.url); // connect to our database
+var conn      = mongoose.createConnection('configDB.writeurl');
+var conn2     = mongoose.createConnection('configDB.readurl');
 
 require('./config/passport')(passport); // pass passport for configuration
 
